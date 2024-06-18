@@ -1,71 +1,62 @@
-body{
-    background-color: black;
-    color: white;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-h1{
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    background-color: #000;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 15%;
+    height: 100vh;
+    margin: 0;
+}
+
+.post {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
     padding: 10px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.post-header i {
+    margin-right: 10px;
+    font-size: 24px;
 }
 
-.container img {
-    width: 50%;
+.post-header i.fa-ellipsis-vertical {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.post-img img {
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
-.titleDate{
+.post-body {
+    padding: 10px;
+}
+
+.post-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    font-size: 25px;
+    margin-bottom: 10px;
 }
 
-.container .first,
-.container .second,
-.container .third,
-.container .fourth {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
+.post-icons i {
+    font-size: 24px;
 }
 
-
-
-h2 {
-    margin-top: 10px ; 
-    font-size: 23px;
-    text-align: center;
-}
-
-
-h4{
-    display: block;
-    height: 30px ;
-    width: 90%;
-    background-color: gray;
-    margin: 10px 0;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
+.post-icons i.fa-bookmark {
+    margin-left: auto;
 }
